@@ -2,7 +2,7 @@ import './StylesComponents.css';
 import Text from './Text';
 import Buttons from './Buttons'
 
-const QuoteBox = ({ quoteBoxText, quoteBoxAuthor, boxTwitterRef, boxHandleClick}) => {    
+const QuoteBox = ({ quoteBoxText, quoteBoxAuthor, boxTwitterRef, boxHandleClick }) => {    
     return (
         <div className='quote-box'>
             <div className='quote'>
