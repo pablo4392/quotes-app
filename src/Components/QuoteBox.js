@@ -1,21 +1,15 @@
-import React, {useState} from 'react';
-import Data from '../quotes.json';
-import Button from './Button.js';
+import './StylesComponents.css';
 import Text from './Text.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const QuoteBox = () => {
-    const [randomNumber, setRandom ] = useState(0);
-
-    const handleRandomNumber = () => {
-        const random = Math.random() * (Data.quotes.length - 0);
-        setRandom(Math.floor(random) + 0);
-    }
-
+const QuoteBox = ({randomNumber, handleClick}) => {    
     return (
         <div className='box'>
             <div className='quote'>
                 <Text position={randomNumber} />
-                <Button handleClick={handleRandomNumber}/>
+                <button className="btn btn-outline-primary" onClick={() => handleClick()}>
+                    New quote
+                </button>
             </div> 
         </div>
     )

@@ -1,0 +1,35 @@
+/* QUOTE BOX */
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    border: solid #f0ebcc 10px;
+    border-radius: 0.8rem;
+}
+
+
+/* TEXT */
+.quote-icon {
+    margin: 8px;
+    font-size: 28px;
+    color: #f0ebcc;
+}
+
+.quote {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f0ebcc;
+    font-weight: bold;
+    margin: 10px;
+}
+  
+.author {
+    font-size: 20px;
+    color: #f0ebcc;
+    font-family: 'Century';
+    font-weight: bold;
+    margin: 13px;
+    margin-left: 250px;
+}

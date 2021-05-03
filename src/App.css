@@ -8,45 +8,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45.1rem;
-  background-color: #222831;
-}
-
-.box {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  width: 500px;
-  border: solid white 10px;
-  border-radius: 0.8rem;
-}
-
-.button {
-  width: 120px;
-  height: 30px;
-  margin-top: 10px;
-  border-radius: 0.5rem;
-  color: black;
-  font-weight: bold;
-  background-color: #f5f4f4;
-  border: none;
-  font-size: 19px;
-}
-
-.quote {
-  font-size: 25px;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.author {
-  font-size: 18px;
-  color: white;
-  font-family: 'Century';
-  font-weight: bold;
-  margin: 13px;
-  margin-left: 250px;
+  height: 100vh;
 }
