@@ -1,12 +1,13 @@
 import './App.css';
+import Data from './quotes.json';
 import QuoteBox from './Components/QuoteBox.js'
 import React, {useState} from 'react';
-import Data from './quotes.json';
 
 function App() {
   const [randomNumber, setRandom ] = useState(0);
   const [backgroundColor, setBackgroundColor] = useState("#eeebdd")
   const random = Math.random() * (Data.quotes.length);
+  const twittURL = `https://twitter.com/intent/tweet?text=${Data.quotes[randomNumber].quote}`
 
   const handleRandomNumber = () => {
       setRandom(Math.floor(random));
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div className="App" style={{background: backgroundColor}}>
-      <QuoteBox randomNumber={randomNumber} handleClick={handleRandomNumber} />
+      <QuoteBox quoteBoxText={Data.quotes[randomNumber].quote} quoteBoxAuthor={Data.quotes[randomNumber].author} twitterRef={twittURL} handleClick={handleRandomNumber} />
     </div>
   );
 }

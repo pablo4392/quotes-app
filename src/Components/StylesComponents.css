@@ -1,32 +1,41 @@
+:root {
+    --main-color: #1b1a17;
+}
+
 /* QUOTE BOX */
 .quote-box {
     width: 600px;
-    padding: 8px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border: solid #1b1a17 10px;
+    border: solid 10px var(--main-color);
     border-radius: 15px;
+}
+
+.quote-buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* TEXT */
 .quote-icon {
     margin: 8px;
     font-size: 28px;
-    color: #1b1a17;
+    color: var(--main-color);
 }
 
 .quote {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    color: #1b1a17;
+    color: var(--main-color);
     font-weight: bold;
 }
   
 .author {
     font-size: 20px;
-    color: #1b1a17;
+    color: var(--main-color);
     font-family: 'Century';
     font-weight: bold;
     margin-left: 250px;

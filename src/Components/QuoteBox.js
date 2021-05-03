@@ -2,14 +2,19 @@ import './StylesComponents.css';
 import Text from './Text.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const QuoteBox = ({randomNumber, handleClick}) => {    
+const QuoteBox = ({ quoteBoxText, quoteBoxAuthor, twitterRef, handleClick}) => {    
     return (
         <div className='quote-box'>
             <div className='quote'>
-                <Text position={randomNumber} />
-                <button className="btn btn-outline-dark" onClick={() => handleClick()}>
-                    New quote
-                </button>
+                <Text quoteText={quoteBoxText} quoteAuthor={quoteBoxAuthor} />
+                <div className="quote-buttons">
+                    <a className="btn btn-outline-primary" href={twitterRef} target="_blank" rel="noreferrer">                        
+                        Twittear
+                    </a>
+                    <button className="btn btn-outline-dark" onClick={() => handleClick()}>
+                        New quote
+                    </button>
+                </div>
             </div> 
         </div>
     )

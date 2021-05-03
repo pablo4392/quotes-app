@@ -1,16 +1,17 @@
-import Data from '../quotes.json';
 import './StylesComponents.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
-const Text = ({position}) => {
+const Text = ({ quoteText, quoteAuthor }) => {
     return (
         <div>
             <p className="quote">
                 <FontAwesomeIcon className="quote-icon" icon={faQuoteRight}/>
-                {Data.quotes[position].quote}
+                {quoteText}
             </p>
-            <p className="author">{Data.quotes[position].author}</p>
+            <p className="author">
+                {quoteAuthor}
+            </p>
         </div>
     )
 }
