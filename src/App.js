@@ -7,7 +7,7 @@ function App() {
   const [randomNumber, setRandom ] = useState(0);
   const [backgroundColor, setBackgroundColor] = useState("#eeebdd")
   const random = Math.random() * (Data.quotes.length);
-  const twittURL = `https://twitter.com/intent/tweet?text=${Data.quotes[randomNumber].quote}`
+  const twittURL = `https://twitter.com/intent/tweet?text=${Data.quotes[randomNumber].quote}%20${Data.quotes[randomNumber].author}`
 
   const handleRandomNumber = () => {
       setRandom(Math.floor(random));
