@@ -1,20 +1,13 @@
 import './StylesComponents.css';
-import Text from './Text.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Text from './Text';
+import Buttons from './Buttons'
 
-const QuoteBox = ({ quoteBoxText, quoteBoxAuthor, twitterRef, handleClick}) => {    
+const QuoteBox = ({ quoteBoxText, quoteBoxAuthor, boxTwitterRef, boxHandleClick}) => {    
     return (
         <div className='quote-box'>
             <div className='quote'>
                 <Text quoteText={quoteBoxText} quoteAuthor={quoteBoxAuthor} />
-                <div className="quote-buttons">
-                    <a className="btn btn-outline-primary" href={twitterRef} target="_blank" rel="noreferrer">                        
-                        Twittear
-                    </a>
-                    <button className="btn btn-outline-dark" onClick={() => handleClick()}>
-                        New quote
-                    </button>
-                </div>
+                <Buttons twitterRef={boxTwitterRef} handleClick={boxHandleClick} />                
             </div> 
         </div>
     )

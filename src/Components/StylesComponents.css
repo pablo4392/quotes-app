@@ -14,11 +14,6 @@
     border-radius: 15px;
 }
 
-.quote-buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
 /* TEXT */
 .quote-icon {
     margin: 8px;
@@ -39,4 +34,14 @@
     font-family: 'Century';
     font-weight: bold;
     margin-left: 250px;
+}
+
+/* BUTTONS */
+.quote-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-icon {
+    margin-right: 8px;
 }

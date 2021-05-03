@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App" style={{background: backgroundColor}}>
-      <QuoteBox quoteBoxText={quote} quoteBoxAuthor={author} twitterRef={twittURL} handleClick={handleRandomNumber} />
+      <QuoteBox quoteBoxText={quote} quoteBoxAuthor={author} boxTwitterRef={twittURL} boxHandleClick={handleRandomNumber} />
     </div>
   );
 }
