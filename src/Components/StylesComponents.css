@@ -1,35 +1,33 @@
 /* QUOTE BOX */
-.box {
+.quote-box {
+    width: 600px;
+    padding: 8px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 500px;
-    border: solid #f0ebcc 10px;
-    border-radius: 0.8rem;
+    border: solid #1b1a17 10px;
+    border-radius: 15px;
 }
-
 
 /* TEXT */
 .quote-icon {
     margin: 8px;
     font-size: 28px;
-    color: #f0ebcc;
+    color: #1b1a17;
 }
 
 .quote {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    color: #f0ebcc;
+    color: #1b1a17;
     font-weight: bold;
-    margin: 10px;
 }
   
 .author {
     font-size: 20px;
-    color: #f0ebcc;
+    color: #1b1a17;
     font-family: 'Century';
     font-weight: bold;
-    margin: 13px;
     margin-left: 250px;
 }
